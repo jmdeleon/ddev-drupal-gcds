@@ -3,7 +3,6 @@ mkdir drupal && cd drupal
 ddev config --project-type=drupal11 --docroot=web
 ddev start
 ddev composer create-project drupal/cms
-ddev composer config minimum-stability dev
 ddev composer install
 ddev composer drupal:recipe-unpack
 ddev composer require --dev drush/drush
